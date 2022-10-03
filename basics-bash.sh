@@ -12,4 +12,13 @@
 #SBATCH --time=5-00:00:00
 #SBATCH --mail-user=ma.madrid@uniandes.edu.co
 #SBATCH --mail-type=ALL
-#SBATCH -o job_name_X.o
+#SBATCH -o job_name_Log.o%j
+#SBATCH -e job_name_Error.o%j
+########################################################################################
+
+##################### Zona Carga de Módulos ############################################
+
+module load  nombre_módulo
+########################################################################################
+
+>> Ponga aquí sus comandos para ejecutar análisis.
